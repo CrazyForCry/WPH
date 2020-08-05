@@ -1,0 +1,395 @@
+@num:16rem;
+
+#GWTB{
+	position: fixed;
+	width: 50/@num;
+	height: 50/@num;
+	bottom: 30/@num;
+	z-index: 100;
+	border: 1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 49/@num;
+	background-color: transparent;
+	a{
+		font-size: 30/@num;
+	}
+}
+
+#FHTB{
+	position: fixed;
+	width: 50/@num;
+	height: 50/@num;
+	bottom: 30/@num;
+	right: 0;
+	z-index: 100;
+	border: 1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 49/@num;
+	background-color:transparent;
+	a{
+		font-size: 30/@num;
+	}
+}
+
+#Header{
+	width: 375/@num;
+	height: 65/@num;
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+//	background-color: aquamarine;
+	.box{
+		height: 40/@num;
+		line-height: 40/@num;
+//		background-color: aqua;
+		&-left{
+			width: 38/@num;
+			height: 40/@num;
+			span{
+				display: block;
+				margin-left: 10/@num;
+				font-size: 18/@num;
+			}
+		}
+		&-middle{
+			width: 240/@num;
+			position: relative;
+			span{
+				display: block;
+				width: 10/@num;
+				height: 10/@num;
+				font-size: 14/@num;
+				position: absolute;
+				left: 8/@num;
+			}
+			input{
+				width: 240/@num;
+				height: 30/@num;
+				border-radius: 30/@num;
+				padding-left: 25/@num;
+			}
+		}
+		
+		&-right{
+			width: 32/@num;
+			position: relative;
+			span{
+				font-size: 20px;
+				right: 0;
+				position: absolute;
+			}
+		}
+	}
+	.DHL{
+		width: 375/@num;
+		height: 30/@num;
+		position: relative;
+		overflow: hidden;
+		ul{
+			width: 280/@num;
+			height: 30/@num;
+			overflow: hidden;
+			float: left;
+			li{
+				width: 53/@num;
+				float: left;
+				text-align: center;
+				white-space: nowrap;
+				overflow: hidden;
+				&:first-child{
+					border-bottom: 3px solid orange;
+					a{
+						color: orange;
+					}
+					
+				}
+				&:last-child{
+					width: 40/@num;
+					
+				}
+				a{
+					font-size: 12/@num;
+				}
+			}
+		}
+		span{
+			width: 35/@num;
+			display: block;
+			position: absolute;
+			top:3/@num;
+			right: 60/@num;
+			font-size: 20/@num;
+			
+		}
+	}
+	
+	
+}
+
+#NRDH{
+	padding-top:70/@num;
+	width: 320/@num;
+	height: 160/@num;
+	.box{
+		width: 320/@num;
+		height: 160/@num;
+		&-img{
+			width: 320/@num;
+			height: 160/@num;
+			a{
+				display: block;
+				width: 320/@num;
+				height: 160/@num;
+				img{
+					width: 320/@num;
+					height: 160/@num;	
+				}
+			}
+		}
+		&-point{
+			ul{
+				position: relative;
+				li{
+					position: relative;
+					div{
+						display: block;
+						width: 0;
+						height: 0;
+						border-width: 5/@num;
+						border-style: solid;
+						border-radius: 5/@num;
+						border-color: darkgray;
+						position: absolute;
+						z-index: 999;
+					}
+					&:first-child{
+						div{
+							border-color: aquamarine;
+							top:-30/@num;
+							left: 40%;
+						}
+					}
+					&:nth-child(2){
+						div{
+							top:-30/@num;
+							left: 45%;
+						}
+					}
+					&:nth-child(2):hover::after{
+						content: '';
+						width: 320/@num;
+						height: 160/@num;
+						position: absolute;
+						background-image: url("15865098971231.jpg!85.webp");
+						background-size: 320/@num 160/@num;
+						background-repeat: no-repeat;
+						top:-160/@num;
+						left: 0;
+					}
+					&:last-child{
+						div{
+							top:-30/@num;
+							left: 50%;
+						}
+					}
+					&:last-child:hover::after{
+						content: '';
+						width: 320/@num;
+						height: 160/@num;
+						position: absolute;
+						background-image:url("15865111964415.jpg!85.webp");
+						background-size: 320/@num 160/@num;
+						background-repeat: no-repeat;
+						top:-160/@num;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+
+#SPFL{
+	width: 20/@num;
+	height: 172/@num;
+	padding-top: 72/@num;
+	
+	.box{
+		width: 320/@num;
+		height: 122/@num;
+		background-color: #FDEEF3;
+		ul{
+			padding: 0 5/@num;
+			width: 320/@num;
+			
+			display: flex;
+			justify-content: space-around;
+			li{
+				text-align: center;
+				a{
+					display: block;
+					width: 50/@num;
+					height: 40/@num;
+					border: 1/@num solid #cccccc;
+					border-radius: 50%;
+					text-align: center;
+					img{
+						display: block;
+						width: 60/@num;
+						height: 60/@num;
+						padding-right: 10/@num;
+						padding-bottom: 5/@num;
+					}
+				}	
+				p{ 
+					
+					margin-right: 10/@num;
+					font-weight: bold;
+					text-align: center;
+					width: 50/@num;
+					height: 20/@num;
+					font-size: 8/@num;
+				}
+				
+			}
+		}
+	}
+}
+
+#SPGG{
+	width: 320/@num;
+	height: 250/@num;
+	padding-top: 20/@num;
+	.box{
+		width: 320/@num;
+		height: 250/@num;
+		a{
+			img{
+				width: 320/@num;
+				height: 70/@num;
+			}
+		}
+		ul{
+			position: relative;
+			top:-5/@num;
+			width: 320/@num;
+			display: flex;
+			justify-content: space-around;
+			li{
+				a{
+					img{
+						width: 105/@num;
+						height: 175/@num;
+					}
+				}
+			}
+		}
+	}
+}
+
+#SPZS{
+	width: 320/@num;
+	height: 900/@num;
+	padding-top: 20/@num;
+	.box{
+		width: 320/@num;
+		height: 280/@num;
+		h2{
+			padding: 20/@num;
+			text-align: center;
+			font-size: 16/@num;
+		}
+		a{
+			img{
+				width: 320/@num;
+				height: 180/@num;
+			}
+		}
+		p:first-of-type{
+			margin-left: 20/@num;
+			width: 140/@num;
+			font-size: 14/@num;
+			font-weight: bold;
+			float: left;
+			background-color: aquamarine;
+		}
+		span:nth-child(4){
+			float: right;
+			color: #cccccc;
+			width: 160/@num;
+			text-align: right;
+			font-size: 14/@num;
+		}
+		p:nth-of-type(2){
+			position: relative;
+			width: 50/@num;
+			height: 20/@num;
+			text-align: left;
+			font-size: 14/@num;
+			left: 60/@num;
+			margin-top: 3/@num;
+			
+			span{
+				color: red;
+			}
+		}
+		span:nth-child(6){
+			display: block;
+			width: 5/@num;
+			position: relative;
+			left: 130/@num;
+			top:-6/@num;
+			float: left;
+			font-size: 12/@num;
+			
+		}
+		p:last-of-type{
+			position: relative;
+			top:-5/@num;
+			width: 130/@num;
+			height: 20/@num;
+			left: 130/@num;
+			font-size: 14/@num;
+			float: left;
+			
+		}
+	}
+}
+
+#Bottom{
+	width: 320/@num;
+	height: 50/@num;
+	
+	.box{
+		width: 320/@num;
+		height: 60/@num;
+		p{
+			font-size: 14/@num;
+			&:nth-child(1){
+				width: 70/@num;
+				float: left;
+			}
+			&:nth-child(2){
+				float: left;
+				width:70/@num;
+				padding-left: 10/@num;
+			}
+			&:nth-child(3){
+				padding-top: 5/@num;
+				color: #cccccc;
+				clear: both;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+

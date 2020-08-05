@@ -1,0 +1,260 @@
+/* LESS Document */
+//<div id="container">
+//		<h4>精选特卖</h4>
+//		<div class="SPXX">
+//			<div class="SPXX-left">
+//				<a href="#">
+//					<img src="f635b10f-dc14-48dd-8a02-041cf33b3e55_420_531_136x172_90.jpg" alt="">
+//				</a>
+//			</div>
+//			<div class="SPXX-right">
+//				<div class="SPXX-right-top">
+//					<p>唯品自营 | 2020春季新款纯色男士小西装简约舒适男士休闲西装外套</p>
+//					<span>&yen;149</span>
+//					<span>&yen;899</span>
+//				</div>
+//				<div class="SPXX-right-middle">
+//					<p>格子黑灰:S</p>
+//				</div>
+//				<div class="SPXX-right-down">
+//					<span>-</span>
+//					<p>1</p>
+//					<span>+</span>
+//					<span>X</span>
+//				</div>
+//			</div>
+//		</div>
+//	</div>
+
+@num:16rem;
+#Header{
+	width: 320/@num;
+	height: 50/@num;
+	border-bottom: 1px solid #ccc;
+	span{
+		display: block;
+			&:first-of-type{
+				width: 50/@num;
+				height: 50/@num;
+				text-align: center;
+				line-height: 50/@num;
+				font-size: 24/@num;
+				display: block;
+				float: left;
+		}
+				
+	}
+	p{			
+			margin-left: 60/@num;
+				width: 80/@num;
+				height: 50/@num;
+				text-align: center;
+				line-height: 50/@num;
+				display: block;
+				float: left;
+	}
+	span{
+		display: block;
+		&:last-of-type{
+			color: red;
+			float: left;
+			width: 50/@num;
+			height: 50/@num;
+			line-height: 50/@num;
+		}
+	}
+}
+
+#SHDZ{
+	width: 320/@num;
+	height: 50/@num;
+	background-color:#656C89;
+	p{
+		float: left;
+		line-height: 50/@num;
+		color: white;
+		font-size: 14/@num;
+		padding-left: 10/@num;
+	}
+	span{
+		line-height: 50/@num;
+		font-size: 18/@num;
+		padding-right: 20/@num;
+		display: block;
+		float: right;
+	}
+}
+
+#container{
+	width: 310/@num;
+	height: 500/@num;
+	h4{
+		font-size: 14/@num;
+		margin-left: 5/@num;
+		border-bottom: 1px solid #ccc;
+	}
+	.SPXX{
+		width: 310/@num;
+		height: 110/@num;
+		margin-left: 10/@num;
+		border-bottom: 1px solid #ccc;
+		&-left{
+			float: left;
+			margin-top: 10/@num;
+			a{
+				img{
+					width: 68/@num;
+					height: 85/@num;
+				}
+			}
+		}
+		&-right{
+			height: 85/@num;
+			width: 238/@num;
+			margin-top: 10/@num;
+			float: left;
+			&-top{
+				float: left;
+				overflow: hidden;
+				height: 38.5/@num;
+				width: 238/@num;
+				p{
+					float: left;
+					font-size: 13/@num;
+					width: 186/@num;
+				}
+				span{
+					&:first-of-type{
+						font-size: 14/@num;
+					}
+					&:last-of-type{
+						font-size: 12/@num;
+						color: #ccc;
+						text-decoration: line-through;
+					}
+				}
+			}
+			&-middle{
+				font-size: 14/@num;
+				color: #ccc;
+				
+			}
+			&-down{
+				float: left;
+				margin-top: 5/@num;
+				position: relative;
+				span{
+					float: left;
+					border: 1px solid #ccc;
+					text-align: center;
+					display: block;
+					width: 20/@num;
+					height: 20/@num;
+					line-height: 20/@num;
+					
+				}
+				p{
+					width: 30/@num;
+					text-align: center;
+					float: left;
+					border: 1px solid #ccc;
+					height: 20/@num;
+					line-height: 20/@num;
+				}
+				span{
+					&:nth-child(4){
+						display: block;
+						border: none;
+						position: absolute;
+						right: -150/@num;
+					}
+				}
+			}
+		}
+	}
+	.YFXX{
+		margin-top: 10/@num;
+		padding-left: 10/@num;
+		span{
+			font-size: 14/@num;
+			color: red;
+		}
+	}
+	.LQXX{
+		padding-left: 10/@num;
+		margin-top: 10/@num;
+		p{
+			float: left;
+			font-size: 14/@num;
+		}
+		span{
+			float: right;
+			font-size: 14/@num;
+		}
+	}
+	.SPJE{
+		padding-left: 10/@num;
+		border-top: 1px solid #ccc;
+		margin-top: 80/@num;
+		padding-top: 20/@num;
+		
+		p{
+			float: left;
+			font-size: 14/@num;
+			color: black;
+		}
+		span{
+			float: right;
+			font-size: 14/@num;
+			color: deeppink;
+		}
+	}
+}
+#Bottom{
+	width: 320/@num;
+	height: 85/@num;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+	border-top: 1px solid #ccc;
+	p{
+		line-height: 45/@num;
+		text-align: center;
+		border: 1px solid;
+		margin: 15/@num 20/@num;
+		&:nth-child(1){
+			
+			background-color: white;
+			float: left;
+			color: gray;
+			width: 100/@num;
+		}
+		&:nth-child(2){
+			width: 140/@num;
+			background-color: #E80080;
+			float: right;
+		}
+	}
+}
+//<div class="YFXX">
+//			<span>运费登录后为准</span>
+//		</div>
+//		<div class="LQXX">
+//			<p>使用礼券</p>
+//			<span class="iconfont icon-jiantou"></span>
+//		</div>
+//		<div class="SPJE">
+//			<p>商品总金额</p>
+//			<span>&yen;149</span>
+//		</div>
+//	</div>
+//	
+//	<div id="Bottom">
+//		<p>货到付款</p>
+//		<p>在线支付</p>
+//	</div>
+
+
+
+
+
